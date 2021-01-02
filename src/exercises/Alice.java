@@ -16,7 +16,7 @@ public class Alice {
         if (firstSen.toLowerCase().contains(wordSearch)){
 
             int index = firstSen.indexOf(wordSearch);
-            String replaceString = firstSen.replace("wordSearch","");
+            String replaceString = firstSen.replace(wordSearch,"");
             System.out.println("'"+ wordSearch + "'"+" was found.");
             System.out.println(index +" "+ wordSearch.length());
             System.out.println(replaceString);
