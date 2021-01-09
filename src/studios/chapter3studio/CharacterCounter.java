@@ -1,4 +1,4 @@
-package chapter3studio;
+package studios.chapter3studio;
 
 import java.util.HashMap;
 import java.util.Map;

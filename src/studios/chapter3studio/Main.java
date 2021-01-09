@@ -1,4 +1,4 @@
-package chapter3studio;
+package studios.chapter3studio;
 
 public class Main {
 
