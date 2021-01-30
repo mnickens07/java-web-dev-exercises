@@ -5,14 +5,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class CharacterCounter {
-
 //     Class Variables
-
 //     Class Constructor
     public CharacterCounter(){
-
 }
-
 //    Methods
     public static void countCharacters(){
         Scanner input = new Scanner(System.in);
@@ -21,14 +17,16 @@ public class CharacterCounter {
 
         input.close();
 
-        char[] charactersInString = userString.toCharArray();
-        HashMap<Character, Integer> myCharMap=  new HashMap<>();
-        for (Character c: charactersInString){
-            if (myCharMap.containsKey(c)){
-                Integer value = myCharMap.get(c)+1;
-                myCharMap.put(c, value);
+        char[] charactersInString = userString.toLowerCase().toCharArray();
+
+        HashMap<Character, Integer> myCharMap =  new HashMap<>();
+        for (Character userChars: charactersInString){
+            if (myCharMap.containsKey(userChars)){
+                int value = myCharMap.get(userChars) +1;
+                myCharMap.put(userChars, value);
+//                System.out.println(myCharMap.put(c, value));
             } else {
-                myCharMap.put(c, 1);
+                myCharMap.put(userChars, 1);
             }
 
         }

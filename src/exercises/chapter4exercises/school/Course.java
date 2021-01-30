@@ -5,17 +5,26 @@ import java.util.ArrayList;
 public class Course {
 //    class variables
     private String courseName;
-    private Double numberOfCredits;
-    private ArrayList<Student> numberOfStudents;
+    private Integer numberOfCredits;
+    private ArrayList<Student> studentList;
 
-//    class constructors
-//    public Course(String courseName, Double numberOfCredits, Student numberOfStudents ){
-//        this.courseName=courseName;
-//        this.numberOfCredits=numberOfCredits;
-//        this.numberOfStudents=numberOfStudents;
-//
-//    }
+//  Constructors
+public Course(String courseName, Integer numberOfCredits){
+    this.courseName=courseName;
+    this.numberOfCredits=numberOfCredits;
+}
 
-//    methods
 
+    @Override
+    public String toString() {
+        return this.courseName + "is worth " + this.numberOfCredits + " credit hours.";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if((obj instanceof Course)==false) return false;
+        Course myCourseObj = (Course) obj;
+        if (myCourseObj.numberOfCredits.equals(this.numberOfCredits))return true;
+        else return false;
+    }
 }
