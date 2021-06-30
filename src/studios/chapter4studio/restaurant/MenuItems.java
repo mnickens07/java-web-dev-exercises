@@ -51,7 +51,7 @@ public class MenuItems {
         if (obj==this) return true;
         if (!(obj instanceof MenuItems)) return false;
         MenuItems menuItems = (MenuItems) obj;
-        if (menuItems.name.equals(this.name) && menuItems.description.equals(this.description) && menuItems.price.equals(this.price)&& menuItems.category.equals(this.category)) return true;
+        if (menuItems.name.equals(this.name) && menuItems.description.equals(this.description) && menuItems.price==this.price && menuItems.category.equals(this.category)) return true;
         else return false;
     }
 }
