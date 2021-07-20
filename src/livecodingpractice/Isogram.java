@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Isogram {
 
     public static void main(String[] args) {
-        String testWord="thumbscrewjapingly";
-        System.out.println(isIsogram(testWord));
+        String testWord="dbsagbgagggaaa";
+        System.out.println(longestSubString(testWord));
     }
 
     static boolean isIsogram(String maybeIsogram){
@@ -20,5 +20,18 @@ public class Isogram {
         return true;
     }
 
+    static int longestSubString(String str) {
+
+        int finalString = 0;
+
+        for (int i = 0; i < str.length() - 1; i++) {
+            if (str.charAt(i) == str.charAt(i + 1)) {
+                finalString++;
+            } else {
+                finalString = 1;
+            }
+        }
+        return finalString;
+    }
 }
 

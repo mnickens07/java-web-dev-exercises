@@ -3,8 +3,8 @@ package livecodingpractice;
 public class MultiplesOf3Or5 {
 
     public static void main (String [] args){
-            int myNumber=60;
-            System.out.println(solution(myNumber));
+            int myNumber=1000;
+            System.out.println(solution(4000000));
         }
 
 
@@ -20,4 +20,5 @@ public class MultiplesOf3Or5 {
         }
         return total;
     }
+
 }

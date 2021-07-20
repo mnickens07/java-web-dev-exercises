@@ -8,7 +8,7 @@ public class LargestInt {
     public static void main(String[] args)
     {
 
-        int [] intArray= {1,20,-3,5};
+        int [] intArray= {1,20,-30,5};
 
 
         System.out.println("Largest integer in the given array is " + LargestInt.largestInt(intArray));
